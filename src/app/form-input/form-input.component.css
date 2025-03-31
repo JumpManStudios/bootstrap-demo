@@ -1,0 +1,64 @@
+.form-floating.form-floating-sm>.form-control,
+.form-floating.form-floating-sm>.form-control-plaintext {
+  padding: inherit;
+}
+
+.form-floating.form-floating-sm>.form-control,
+.form-floating.form-floating-sm>.form-control-plaintext,
+.form-floating.form-floating-sm>.form-select {
+  padding: 0.32rem .75rem;
+  background-color: white;
+  min-height: auto;
+  height: inherit;
+  /* min-height: inherit; */
+  line-height: inherit;
+}
+
+.form-floating.form-floating-sm>.form-control-plaintext~label,
+.form-floating.form-floating-sm>.form-control:focus~label,
+.form-floating.form-floating-sm>.form-control:not(:placeholder-shown)~label,
+.form-floating.form-floating-sm>.form-select~label {
+  color: rgba(var(--bs-body-color-rgb), .65);
+  transform: scale(.9) translateY(-0.5rem) translateX(0.1rem);
+  /*background-color: white;*/
+  background: linear-gradient(
+    rgba(255,255,255,0),
+    rgba(255,255,255,100%),
+    rgba(255,255,255,100%),
+    rgba(255,255,255,100%),
+    rgba(255,255,255,0)
+  );
+  color: #252A50;
+  font-weight: 500;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  padding-top: 0;
+  padding-bottom: 0.1rem;
+  line-height: 1;
+}
+
+.form-floating.form-floating-sm>label {
+  position: absolute;
+  top: 0;
+  left: 0.75rem;
+  margin-bottom: 0;
+  z-index: 2;
+  padding: 0 0;
+  height: auto;
+  font-size: 14px;
+  padding-top: 0.37rem;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  border: var(--bs-border-width) solid transparent;
+  transform-origin: 0 0;
+  transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: rgba(37, 42, 80, 0.29); /* Change the border color */
+  box-shadow: 0 0 0 .25rem rgba(37, 110, 255, 0.25);
+  /*box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);*/
+}

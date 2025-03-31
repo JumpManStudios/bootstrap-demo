@@ -1,0 +1,17 @@
+<div class="form-floating form-floating-sm mb-2">
+  <input
+    type="text"
+    [(ngModel)]="value"
+    (focus)="onFocus()"
+    (blur)="onBlur()"
+    class="form-control"
+    #inputElement
+    id="floatingInputValue"
+    placeholder=""
+  >
+  <label
+    for="floatingInputValue"
+  >
+    {{ label }}
+  </label>
+</div>
