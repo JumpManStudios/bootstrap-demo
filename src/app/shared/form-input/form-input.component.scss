@@ -1,26 +1,24 @@
-.form-floating.form-floating-sm>.form-control,
-.form-floating.form-floating-sm>.form-control-plaintext {
+.form-floating-sm>.form-control,
+.form-floating-sm>.form-control-plaintext {
   padding: inherit;
 }
 
-.form-floating.form-floating-sm>.form-control,
-.form-floating.form-floating-sm>.form-control-plaintext,
-.form-floating.form-floating-sm>.form-select {
+.form-floating-sm>.form-control,
+.form-floating-sm>.form-control-plaintext,
+.form-floating-sm>.form-select {
   padding: 0.32rem .75rem;
   background-color: white;
   min-height: auto;
   height: inherit;
-  /* min-height: inherit; */
   line-height: inherit;
 }
 
-.form-floating.form-floating-sm>.form-control-plaintext~label,
-.form-floating.form-floating-sm>.form-control:focus~label,
-.form-floating.form-floating-sm>.form-control:not(:placeholder-shown)~label,
-.form-floating.form-floating-sm>.form-select~label {
+.form-floating-sm>.form-control-plaintext~label,
+.form-floating-sm>.form-control:focus~label,
+.form-floating-sm>.form-control:not(:placeholder-shown)~label,
+.form-floating-sm>.form-select~label {
   color: rgba(var(--bs-body-color-rgb), .65);
   transform: scale(.9) translateY(-0.5rem) translateX(0.1rem);
-  /*background-color: white;*/
   background: linear-gradient(
     rgba(255,255,255,0),
     rgba(255,255,255,100%),
@@ -37,7 +35,7 @@
   line-height: 1;
 }
 
-.form-floating.form-floating-sm>label {
+.form-floating-sm>label {
   position: absolute;
   top: 0;
   left: 0.75rem;
@@ -57,7 +55,7 @@
   transition: opacity .1s ease-in-out, transform .1s ease-in-out;
 }
 
-.form-control:focus {
+:focus {
   border-color: rgba(37, 42, 80, 0.29); /* Change the border color */
   box-shadow: 0 0 0 .25rem rgba(37, 110, 255, 0.25);
   /*box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);*/
